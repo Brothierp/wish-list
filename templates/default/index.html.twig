@@ -1,0 +1,55 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    
+    <!-- Page Content-->
+    <div class="container px-4 px-lg-5">
+        <!-- Heading Row-->
+        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+            <div class="col-lg-4"><img class="img-fluid rounded mb-4 mb-lg-0" src="{{asset('img/logo.png')}}" width="250px" /></div>
+            <div class="col-lg-8">
+                <h1 class="font-weight-light">Mes idées de choses à faire !</h1>
+                <p>Ici, je vais vous présenter les choses que je veux faire.</p>
+            </div>
+        </div>
+
+        <!-- Content Row-->
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Première idée
+                            <img src="{{asset('img/altr.png')}}" alt="" width="130px">
+                        </h2>
+                        <p class="card-text">Retrouver une alternance </p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="doc/cvBrothier.pdf">Voir mon CV</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Deuxieme idée
+                            <img src="{{ asset('img/voyage.jpg') }}" alt="" width="50px">
+                        </h2>
+                        <p class="card-text">Voyager (Russie//Pologne) et apprendre l alphabet cyrillique</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">Voir les villes choisies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Troisieme idée
+                            <img src="{{asset('img/maison.jpg')}}" alt="" width="50px">
+                        </h2>
+                        <p class="card-text">Achter une maison et l'amménager</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">Voir mes idées d'amménagement</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
